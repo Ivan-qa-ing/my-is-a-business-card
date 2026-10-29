@@ -1,73 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
-  <body background="f.png"></body>
-
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-  
-  
-  
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
+  <title>Иван Панников — QA Engineer</title>
+  <meta name="description" content="Портфолио инженера по тестированию: кейсы, стек, артефакты.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
+  <!-- HEADER -->
   <header class="header">
-    <span class="logo">Моя визитка</span>
+    <div class="container header__inner">
+      <a href="#top" class="logo">IP<span>.</span>QA</a>
+      <nav class="nav">
+        <a href="#about">Обо мне</a>
+        <a href="#cases">Кейсы</a>
+        <a href="#stack">Стек</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="hero">
-    <div class="container hero__container">
-      <div class="hero__about">
-        
-        </h1>
-        <h1 class="hero__title">QA Engineer</h1>
-        <h2 class="hero__subtitle">Иван Панников</h2>
-        
-        <p class="hero__description">
-
-          Привет, я занимаюсь ручным тестированием сайтов и мобильных приложений
-          
-          <p class="hero__description"></p>
-
-          <b>Немного о себе</b>     Веду активный образ жизни, с ранних лет занимаюсь футболом,играю по сей день,в теплое время предпочитаю велосипед.С дества мечтал стать гонщиком,теперь гонщик за багами :)
-          <b>Дата рождения</b>  17 января 1995
-          <b>Город</b>  Ростов-на-Дону
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="hero__eyebrow">QA Engineer · Junior+</p>
+        <h1 class="hero__title">Иван Панников</h1>
+        <p class="hero__subtitle">
+          Ручное тестирование веб и мобильных приложений(Практика на тренажере). API, регресс, тест-дизайн.
+          Нахожу баги до того, как их найдёт пользователь.
         </p>
-
-
-        <div class="hero__links">
-          <a class="hero__link" href="https://vk.com/djsimple__art" target="_blank"><i class='bx bxl-vk' color-red></i></a>
-          
-        <a class="hero__link" href="https://t.me/d3sh_1337"><i class='bx bxl-telegram'></i>
-          
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#cases">Смотреть кейсы</a>
+          <a class="btn btn--ghost" href="https://t.me/d3sh_1337" target="_blank" rel="noopener">Написать в Telegram</a>
         </div>
-
-
+        <ul class="hero__meta">
+          <li><strong>1 год 5 мес.</strong> опыта</li>
+          <li><strong>Лабиринт</strong> · Auto.ae · QA Studio</li>
+          <li><strong>Postman · SQL · Cypress · Pytest</strong></li>
+        </ul>
       </div>
-
-      <div class="hero__box">
-        <img class="hero__box-img" src="photo_2024-11-07_21-50-55.png" alt="">
+      <div class="hero__avatar">
+        <!-- замени на своё фото -->
+        <img src="photo_2024-11-07_21-50-55.png" alt="Иван Панников">
       </div>
-
     </div>
+  </section>
 
-  </div>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section__title">Обо мне</h2>
+      <div class="about">
+        <p>
+          Инженер по тестированию. Для меня качество продукта и предсказуемость релизов — приоритет.
+          Работаю системно: анализ требований → тест-дизайн → проверки → логи и метрики → ретест.
+          Спокойно держу дедлайны, люблю копать в логи и API, чтобы найти корневую причину, а не симптом.
+        </p>
+        <p>
+          Более 15 лет в футболе научили дисциплине и выдержке. В конфликтах фокусируюсь на решении,
+          а не на споре. Планирую расти в сторону API-тестирования и автоматизации.
+        </p>
+        <ul class="about__facts">
+          <li><span>Город</span> Москва</li>
+          <li><span>Английский</span> B1</li>
+          
+        <li><span>Дата рождения</span> 17.01.1995</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
+  <!-- CASES -->
+  <section class="section section--alt" id="cases">
+    <div class="container">
+      <h2 class="section__title">Кейсы</h2>
+      <p class="section__lead">Задача → что сделал → результат.</p>
 
+      <div class="cases">
+
+        <article class="case">
+          <div class="case__head">
+            <h3>Лабиринт — QA Engineer</h3>
+            <span class="case__tag">E-commerce · Web + API</span>
+          </div>
+          <p class="case__task"><b>Задача:</b> обеспечить стабильность релизов интернет-магазина, покрыть E2E-сценарии покупки и интеграции с платёжным шлюзом.</p>
+          <ul class="case__list">
+            <li>Ручное тестирование фронтенда и REST API: функционал, регресс, smoke, sanity.</li>
+            <li>E2E-сценарий: поиск → корзина → оформление → оплата.</li>
+            <li>API-проверки в Postman (скрипты, Collection Runner / Newman), сверка со Swagger.</li>
+            <li>SQL-запросы в PostgreSQL для локализации дефектов.</li>
+            <li>Логи в Kibana / Sentry, мониторинг 4xx/5xx в Grafana после релиза.</li>
+          </ul>
+          <p class="case__result"><b>Результат:</b> инициировал и внедрил ревью тест-кейсов — выросло покрытие, ускорился процесс тестирования; снизилось количество правок на этапе тестирования за счёт анализа требований и макетов до разработки.</p>
+          <div class="case__stack">
+            <span>Postman</span><span>Swagger</span><span>PostgreSQL</span><span>Kibana</span><span>Grafana</span><span>TestIT</span><span>Jira</span><span>Charles</span>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="case__head">
+            <h3>Auto.ae — Intern QA Engineer</h3>
+            <span class="case__tag">Marketplace · Web</span>
+          </div>
+          <p class="case__task"><b>Задача:</b> с нуля выстроить тестовую документацию кабинета дилера и покрыть ключевые сценарии.</p>
+          <ul class="case__list">
+            <li>Разработал чек-листы (Miro) и тест-кейсы (Test IT) — покрытие ~90% ключевых сценариев.</li>
+            <li>Кросс-браузерное тестирование (Chrome, Firefox), систематизация проверок.</li>
+            <li>API-проверки через Swagger и Postman: позитив, негатив, граничные значения.</li>
+            <li>Нашёл 45 функциональных дефектов и 97 проблем вёрстки — детализированные баг-репорты.</li>
+            <li>Ревью баг-репортов других тестировщиков, стандартизация формата.</li>
+          </ul>
+          <p class="case__result"><b>Результат:</b> время регресса −25–30%, браузеро-зависимые баги в проде −~40%, инциденты по API −~20%, возвраты баг-репортов «на доработку» −15–20%.</p>
+          <div class="case__stack">
+            <span>Postman</span><span>Swagger</span><span>Test IT</span><span>Miro</span><span>Figma</span><span>BrowserStack</span><span>Kibana</span>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="case__head">
+            <h3>QA Studio — учебный production-like проект</h3>
+            <span class="case__tag">Microservices · API · Mobile</span>
+          </div>
+          <p class="case__task"><b>Задача:</b> пройти полный цикл QA на тренажёре с микросервисами, REST/SOAP, Kafka, CI/CD.</p>
+          <ul class="case__list">
+            <li>Сценарии для REST и SOAP API (позитив, негатив, интеграция).</li>
+            <li>Коллекции Postman: окружения, pre/post-scripts, mock server.</li>
+            <li>Kafka: проверка публикации/обработки сообщений, поиск потерь и дублей.</li>
+            <li>Нагрузка в JMeter, рекомендации по порогам алертов.</li>
+            <li>CI в GitHub Actions, UI-автотесты (Cypress) и API-автотесты (Pytest).</li>
+            <li>Мобильное тестирование: push, диплинки, Android Studio, Firebase.</li>
+          </ul>
+          <p class="case__result"><b>Результат:</b> ручной smoke −60–70%, время проверки API −30–40%, диагностика инцидентов — с часов до десятков минут, онбординг новичков 1–2 недели.</p>
+          <div class="case__stack">
+            <span>Kafka</span><span>JMeter</span><span>GitHub Actions</span><span>Cypress</span><span>Pytest</span><span>Docker</span><span>MongoDB</span><span>Android Studio</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section" id="stack">
+    <div class="container">
+      <h2 class="section__title">Стек</h2>
+      <div class="stack">
+        <div class="stack__group">
+          <h4>Тест-дизайн</h4>
+          <p>Чек-листы, тест-кейсы, баг-репорты, регресс, smoke, sanity, E2E</p>
+        </div>
+        <div class="stack__group">
+          <h4>API</h4>
+          <p>Postman, Swagger, REST, SOAP, Newman</p>
+        </div>
+        <div class="stack__group">
+          <h4>Данные и логи</h4>
+          <p>PostgreSQL, MongoDB, Kibana, Sentry, Grafana, Charles</p>
+        </div>
+        <div class="stack__group">
+          <h4>Автоматизация</h4>
+          <p>Python + Pytest, JS + Cypress, GitHub Actions, Docker</p>
+        </div>
+        <div class="stack__group">
+          <h4>Мобильные</h4>
+          <p>Android Studio, ADB, Logcat, Firebase, App Metrics</p>
+        </div>
+        <div class="stack__group">
+          <h4>Процессы</h4>
+          <p>Jira, Confluence, Яндекс.Трекер, Test IT, Miro, Agile</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="container contact">
+      <h2 class="section__title">Связаться</h2>
+      <p class="contact__lead">Открыт к предложениям Junior QA. Отвечаю быстро.</p>
+      <div class="contact__links">
+        <a class="btn btn--primary" href="https://t.me/d3sh_1337" target="_blank" rel="noopener">Telegram @d3sh_1337</a>
+        <a class="btn btn--ghost" href="mailto:ivanpannikov@yandex.ru">ivanpannikov@yandex.ru</a>
+        <a class="btn btn--ghost" href="tel:+79518406046">+7 951 840-60-46</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 Иван Панников · QA Engineer</span>
+      <span>Сделано с вниманием к деталям</span>
+    </div>
+  </footer>
 
 </body>
-
 </html>
